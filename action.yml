@@ -67,7 +67,7 @@ runs:
         python-version: '3.11'
     - name: Install toltecmk
       shell: bash
-      run: pip install https://github.com/chriscohoat/toltec-build/tree/custom-image-prefix
+      run: pip install git+https://github.com/chriscohoat/toltec-build.git@custom-image-prefix
     - name: Build package
       shell: bash
       run: |

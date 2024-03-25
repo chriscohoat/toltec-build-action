@@ -67,12 +67,13 @@ runs:
         python-version: '3.11'
     - name: Install toltecmk
       shell: bash
-      run: pip install toltecmk
+      run: pip install https://github.com/chriscohoat/toltec-build/tree/custom-image-prefix
     - name: Build package
       shell: bash
       run: |
         toltecmk \
           ${{ inputs.verbose && '--verbose' || '' }} \
+          --image-prefix "ghcr.io/chriscohoat/" \
           --work-dir "$(realpath "$work_dir")" \
           --dist-dir "$(realpath "$dist_dir")" \
           --warnings "$warnings" \

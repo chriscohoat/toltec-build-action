@@ -10,7 +10,7 @@ timestamp=2023-12-23T20:46:51Z
 section="utils"
 maintainer="Eeems <eeems@eeems.email>"
 license=MIT
-image=base:v3.1
+image=base:latest
 source=()
 sha256sums=()
 
